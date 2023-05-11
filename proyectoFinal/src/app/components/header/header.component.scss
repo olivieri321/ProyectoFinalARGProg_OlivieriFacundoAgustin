@@ -1,0 +1,30 @@
+*{
+    overflow: hidden;
+}
+$colorbase-1 : rgba(0, 26, 255, 0.925);
+#header-social{
+    width: 100%;
+    height: 100px;
+    background-color: $colorbase-1;
+}
+#header-logo{
+    width: 100%;
+    height: 100px;
+    background-color: $colorbase-1;
+    display:grid;
+    grid-template-areas: "logo menu social";
+}
+#menu{
+    grid-area: "menu";
+    width: 100%;
+}
+#social{
+    grid-area: "social";
+    width: 100%;
+    height: fit-content;
+}
+#logo{
+    grid-area: "logo";
+    width: fit-content;
+    height: fit-content;
+}
